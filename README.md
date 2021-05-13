@@ -1,1 +1,2 @@
-# goodpractice_quarkus
+# quarkus_showcase
+ 
