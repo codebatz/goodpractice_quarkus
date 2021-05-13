@@ -6,8 +6,8 @@ import javax.ws.rs.Path;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-@Path("deep-thought")
-public class DeepThoughtEndpoint {
+@Path("configproperty")
+public class JustAnotherEndpoint {
 
   @Inject
   @ConfigProperty(name = "answer")

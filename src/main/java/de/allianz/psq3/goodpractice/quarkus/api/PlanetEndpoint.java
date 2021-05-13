@@ -36,8 +36,8 @@ public class PlanetEndpoint {
 
   @POST
   @Consumes(MediaType.APPLICATION_JSON)
-  public void persistPlanet(String requestBody) {
-    this.planetService.persistPlanet(requestBody);
+  public void persistPlanet(String planetData) {
+    this.planetService.persistPlanet(planetData);
   }
 
 }

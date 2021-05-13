@@ -26,9 +26,9 @@ public class PlanetService {
     return G * planet1.getMass() * planet2.getMass() / distance / distance;
   }
 
-  public void persistPlanet(String input) {
+  public void persistPlanet(String planetData) {
     Gson gson = new Gson();
-    Planet planet = gson.fromJson(input, Planet.class);
+    Planet planet = gson.fromJson(planetData, Planet.class);
     this.planetRepository.persistPlanet(planet);
   }
 
