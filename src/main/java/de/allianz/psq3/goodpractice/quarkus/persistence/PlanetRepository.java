@@ -19,7 +19,7 @@ public class PlanetRepository {
     return this.entityManager.createQuery("select x from Planet x", Planet.class).getResultList();
   }
 
-  public Planet findById(String id) {
+  public Planet findById(Integer id) {
     return this.entityManager.find(Planet.class, id);
   }
 

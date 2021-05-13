@@ -30,7 +30,7 @@ public class PlanetEndpoint {
 
   @GET
   @Path("{id1}-{id2}")
-  public double getGravity(@PathParam("id1") String id1, @PathParam("id2") String id2) {
+  public double getGravity(@PathParam("id1") Integer id1, @PathParam("id2") Integer id2) {
     return this.planetService.getGravity(id1, id2);
   }
 

@@ -18,7 +18,7 @@ public class PlanetService {
     return this.planetRepository.findAll();
   }
 
-  public double getGravity(String id1, String id2) {
+  public double getGravity(Integer id1, Integer id2) {
     Planet planet1 = this.planetRepository.findById(id1);
     Planet planet2 = this.planetRepository.findById(id2);
     double distance = 42_000_000;
