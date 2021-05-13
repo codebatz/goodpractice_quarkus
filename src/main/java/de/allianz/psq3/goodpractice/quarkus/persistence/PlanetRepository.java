@@ -26,7 +26,7 @@ public class PlanetRepository {
   @Transactional
   public void persistPlanet(Planet planet) {
     this.entityManager.persist(planet);
-    System.out.println("Safed Planet " + planet.getName() + " with ID " + planet.getId() + " in Database!");
+    System.out.println("Stored Planet " + planet.getName() + " with ID " + planet.getId() + " in Database!");
   }
 
 }
